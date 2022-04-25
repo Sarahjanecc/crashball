@@ -21,6 +21,8 @@ class Game {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(this.bg, 0, 0, canvas.width, canvas.height);
 
+    this.ball.gravityBall();
+
     this.pipeArr.forEach((eachPipe) => {
       eachPipe.movePipe();
     });
@@ -36,3 +38,7 @@ class Game {
     requestAnimationFrame(this.gameLoop);
   };
 }
+
+
+
+
