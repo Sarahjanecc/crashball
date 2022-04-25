@@ -1,5 +1,6 @@
 console.log ("probando")
 let startBtn= document.querySelector("#start-btn"); //elemento de DOM
+let restartBtn = document.querySelector("#start-btn");
 let inicialScreen = document.querySelector("#splash-screen")
 
 const canvas = document.querySelector("#my-canvas");
@@ -21,10 +22,6 @@ document.addEventListener("keydown",(event) => {
 }
 
 
-
-
-
-
-
-
 startBtn.addEventListener("click",startGame)
+restartBtn.addEventListener("click", startGame);
+window.addEventListener("keydown", keyPress);

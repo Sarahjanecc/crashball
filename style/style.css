@@ -21,7 +21,7 @@ body {
     width: 400px;
     background-size: cover;
     background-position: center; 
-  }
+  } 
 /* 
   #game-screen {
     background-image: url(../images/backgroundpy.png);
@@ -47,7 +47,6 @@ body {
   
   #my-canvas{
     display: none;
-    border: 10px solid black;
     
   }
   

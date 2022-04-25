@@ -1,12 +1,12 @@
 class Pipe {
-    constructor(yParam, srcParam,xParam) {
-      this.x = xParam;
+    constructor(yParam, srcParam) {
+      this.x = canvas.width;
       this.y = yParam;
       this.w = 100;
       this.h = 180;
       this.img = new Image();
       this.img.src = srcParam; // solo un . importante
-      this.speed = 1;
+      this.speed = 3;
     }
   
     drawPipe = () => {
@@ -18,4 +18,3 @@ class Pipe {
         this.x = this.x - this.speed;
       };
     }
-    
