@@ -5,7 +5,7 @@ class Ball {
     this.w = 80;
     this.h = 100;
     this.img = new Image();
-    this.img.src = "../images/ballyel.png";
+    this.img.src = "./images/ballyel.png";
     this.speed = 0.5;
   }
 

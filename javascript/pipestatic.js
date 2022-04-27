@@ -5,7 +5,7 @@ class Pipestatic {
       this.w = 100;
       this.h = 180;
       this.img = new Image();
-      this.img.src = "../images/tubsup.png"; // solo un . importante
+      this.img.src = "./images/tubsup.png"; // solo un . importante
 
     }
   

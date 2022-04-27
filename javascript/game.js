@@ -1,10 +1,10 @@
 class Game {
   constructor() {
     this.bg = new Image();
-    this.bg.src = "../images/backgroundpy.png";
+    this.bg.src = "./images/backgroundpy.png";
     this.ball = new Ball();
     this.pipestatic = new Pipestatic(10,0);
-    this.pipeArr = [new Pipe(0,"../images/cohete.png" )];
+    this.pipeArr = [new Pipe(0,"./images/cohete.png" )];
     this.working= true
     
   }
@@ -15,7 +15,7 @@ class Game {
         let randomPosition = Math.random() * 150
         //console.log ("estoy funcionando")
 
-        let newPipeDown = new Pipe(randomPosition + 180, "../images/cohete.png")
+        let newPipeDown = new Pipe(randomPosition + 180, "./images/cohete.png")
         this.pipeArr.push(newPipeDown) 
     }
    
