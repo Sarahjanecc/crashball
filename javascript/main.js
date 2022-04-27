@@ -5,13 +5,14 @@ let inicialScreen = document.querySelector("#splash-screen");
 const gameOverScreen = document.querySelector("#gameover-screen");
 
 const canvas = document.querySelector("#my-canvas");
+const scoreDOM = document.querySelector("#score")
 const ctx = canvas.getContext("2d");
 
 let startGame = () => {
   inicialScreen.style.display = "none";
   gameOverScreen.style.display = "none";
   canvas.style.display = "block";
-
+  scoreDOM.style.display= "block";
   let game = new Game();
   game.gameLoop();
 

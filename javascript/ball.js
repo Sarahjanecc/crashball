@@ -1,12 +1,12 @@
 class Ball {
   constructor() {
-    this.x = 160;
-    this.y = 40;
-    this.w = 80;
-    this.h = 100;
+    this.x = 420;
+    this.y = 70;
+    this.w = 50;
+    this.h = 50;
     this.img = new Image();
     this.img.src = "./images/ballyel.png";
-    this.speed = 0.5;
+    this.speed = 1;
   }
 
   drawBall = () => {
