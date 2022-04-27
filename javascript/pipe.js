@@ -6,7 +6,7 @@ class Pipe {
       this.h = 180;
       this.img = new Image();
       this.img.src = srcParam; // solo un . importante
-      this.speed = 2;
+      this.speed = 1.5;
     }
   
     drawPipe = () => {

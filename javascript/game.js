@@ -11,7 +11,7 @@ class Game {
 
   addNewPipes = () => {
 
-    if(this.pipeArr[this.pipeArr.length -1].x < -100){
+    if(this.pipeArr[this.pipeArr.length-1].x < -100){
         let randomPosition = Math.random() * 150
         //console.log ("estoy funcionando")
 
@@ -50,6 +50,7 @@ gameover = () => {
 
 
 
+
   gameLoop = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(this.bg, 0, 0, canvas.width, canvas.height);
@@ -57,6 +58,7 @@ gameover = () => {
     this.ball.gravityBall();
     this.gameOverCollision();
     this.gameover();
+    
 
     this.addNewPipes()
     this.pipeArr.forEach((eachPipe) => {
