@@ -5,17 +5,17 @@ class Game {
     this.ball = new Ball();
     this.pipestatic = new Pipestatic(10,0);
     this.pipeArr = [new Pipe(0,"../images/cohete.png" )];
-    this.pipeDistance = 470
+    this.working= true
     
   }
 
   addNewPipes = () => {
 
-    if(this.pipeArr[this.pipeArr.length -1].x < -150){
-        let randomPosition = Math.random() * 180
+    if(this.pipeArr[this.pipeArr.length -1].x < -100){
+        let randomPosition = Math.random() * 150
         //console.log ("estoy funcionando")
 
-        let newPipeDown = new Pipe(randomPosition + 220, "../images/cohete.png")
+        let newPipeDown = new Pipe(randomPosition + 180, "../images/cohete.png")
         this.pipeArr.push(newPipeDown) 
     }
    
@@ -29,23 +29,34 @@ class Game {
         this.ball.y < eachPipe.y + eachPipe.h &&
         this.ball.h + this.ball.y > eachPipe.y
       ) {
-        
-        this.isGameOn = true;
-        // canvas.style.display =none;
+        console.log ("crash")
+        this.ball = new Ball()
+       
       }
     });
   };
 
 
+gameover = () => {
+  if ( this.ball.y > canvas.height )
+   {
+   // this.isGameOn = false;
+    canvas.style.display = "none";
+    gameOverScreen.style.display ="block"
+    //console.log (click)
+    this.working = false
+  }
+}
 
 
 
   gameLoop = () => {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     ctx.drawImage(this.bg, 0, 0, canvas.width, canvas.height);
-
+//console.log("el juego esta andando")
     this.ball.gravityBall();
     this.gameOverCollision();
+    this.gameover();
 
     this.addNewPipes()
     this.pipeArr.forEach((eachPipe) => {
@@ -60,7 +71,12 @@ class Game {
 
     this.ball.drawBall();
 
-    requestAnimationFrame(this.gameLoop);
+    if( this.working === false){
+
+    }else { 
+      requestAnimationFrame(this.gameLoop);
+    }
+    
   };
 }
 

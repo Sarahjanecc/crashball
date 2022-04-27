@@ -6,7 +6,7 @@ class Ball {
     this.h = 100;
     this.img = new Image();
     this.img.src = "../images/ballyel.png";
-    this.speed = 0.5;
+    this.speed = 2;
   }
 
   drawBall = () => {

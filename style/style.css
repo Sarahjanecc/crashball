@@ -11,26 +11,30 @@ body {
     font-size: 30px;
     margin-top: 40px;
     border-radius: 20px;
-    margin: 40px;
+    margin: 100px;
+
+  }
+
+
+  #restart-btn {
+    background-color: #471bbb;
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 40px;
+    border-radius: 20px;
+    margin: 100px;
 
   }
 
   #splash-screen {
-    background-image: url(../images/portada.png);
-    height: 500px;
-    width: 400px;
+    background-image: url(../images/portada2.png);
+    height: 600px;
+    width: 420px;
     background-size: cover;
     background-position: center; 
   } 
-/* 
-  #game-screen {
-    background-image: url(../images/backgroundpy.png);
-    height: 600px;
-    width: 500px;
-    background-size: cover;
-    background-position: center; 
-  } */
-  
+
   .container {
     display: flex;
     flex-direction: row;
@@ -39,13 +43,9 @@ body {
     margin: 50px;
   }
   
+
   
-  #gameover-screen{
-    display: none;
-  
-  }
-  
-  #my-canvas{
+  #my-canvas,#gameover-screen {
     display: none;
     
   }
