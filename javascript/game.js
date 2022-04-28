@@ -42,7 +42,7 @@ class Game {
       ) {
         console.log ("crash")
         this.ball = new Ball()
-       
+      
       }
     });
   };
@@ -60,7 +60,7 @@ class Game {
         this.working= false
         canvas.style.display = "none";
         gameOverScreen.style.display ="flex"
-       
+        audio.pause ()
       }
     });
   };
@@ -74,6 +74,7 @@ gameover = () => {
     gameOverScreen.style.display ="flex"
     //console.log (click)
     this.working = false
+    audio.pause ()
   }
 }
 

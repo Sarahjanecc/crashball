@@ -4,6 +4,7 @@ let restartBtn = document.querySelector("#restart-btn");
 let inicialScreen = document.querySelector("#splash-screen");
 const gameOverScreen = document.querySelector("#gameover-screen");
 
+const audio = new Audio ("./audio/sarahgame.MP3")
 const canvas = document.querySelector("#my-canvas");
 const scoreDOM = document.querySelector("#score")
 const ctx = canvas.getContext("2d");
@@ -15,6 +16,10 @@ let startGame = () => {
   scoreDOM.style.display= "block";
   let game = new Game();
   game.gameLoop();
+
+  audio.play()
+  audio.loop = true
+  audio.volumen = 0,5
 
   document.addEventListener("keydown", (event) => {
     game.ball.moveBall(event);
