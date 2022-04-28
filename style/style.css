@@ -15,6 +15,19 @@ body {
 
   }
 
+  
+  #score {
+    background-color: #471bbb;
+    color: white;
+    padding: 30px;
+    font-size: 30px;
+    margin-top: -60px;
+    border-radius: 20px;
+    margin: 150px;
+
+  }
+
+
 
   #restart-btn {
    
@@ -36,16 +49,7 @@ body {
     background-position: center; 
   } 
 
-  #score{
-    display: none ;
-    color: black;
-    padding: 30px;
-    font-size: 30px;
-    margin-top: 40px;
-    border-radius: 20px;
-    margin: 100px;
-   
-  }
+ 
 
 
   .container {
