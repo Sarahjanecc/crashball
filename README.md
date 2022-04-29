@@ -94,3 +94,4 @@ Crashball it is a game for the development of attention and motor skills, throug
 [Link Deploy](https://sarahjanecc.github.io/crashball/)
 [Link Repo](https://github.com/Sarahjanecc/crashball.git)
 ### Slides
+https://docs.google.com/presentation/d/100frNJ2eQ-XSODgGAxtpsrs3VTL700Bu4xovI-j-ofk/edit?usp=sharing
