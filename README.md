@@ -2,8 +2,7 @@
 
 ## Description
 
-Crashball is a game where the player must move the ball, dodging obstacles and trying to enter the correct pipe. The game is over if the ball falls into the void or enters the red pipe. Each Pipe has an score , and the player must enter the ball in the the highest scoring pipes to go to the next level.
-
+Crashball it is a game for the development of attention and motor skills, through the visualization of 2 moving targets and an object controlled by the player. The player must identify the blue targets and accumulate them and avoid the red targets or fall into the void.
 ## MVP (DOM - CANVAS)
 
 - game has pipes that moves horizontally
